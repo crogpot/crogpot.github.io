@@ -1,16 +1,197 @@
-<!DOCTYPE html>
-<html>
+<html lang="en"><head><style data-rc-order="prepend" rc-util-key="@ant-design-icons">
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+.anticon > * {
+  line-height: 1;
+}
 
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style>
+  <meta charset="UTF-8">
+  <title>MYSPACE</title>
+  <meta name="description" content="A PLACE FOR FWIENDS">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:og:title" content="MYSPACE">
+  <meta property="og:determiner" content="MY">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A PLACE FOR FWIENDS">
+  <meta property="og:image" content="https://myspace.windows93.net/u/1/avatar.jpg">
+  <meta property="og:url" content="https://myspace.windows93.net/?id=6598">
+  <meta property="og:site_name" content="MYSPACE.WINDOWS93.NET">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="jquery.js"></script><style type="text/css" id="operaUserStyle"></style>
+<style><br>.css-picker-top {<br>  position: fixed !important;<br>  left: 0 !important;<br>  top: 0 !important;<br>  z-index: 999 !important;<br>  width: 100% !important;<br>}<br></style></head>
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <div id="container" style="animation-name: none;">	<script>
+    function timeConverter(t) {     
+        //var a = new Date(t * 1000);
+        var a = new Date(parseInt(t));
+        var today = new Date();
+        var yesterday = new Date(Date.now() - 86400000);
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var year = a.getFullYear();
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var hour = a.getHours();
+        if (hour<10) {hour='0'+hour};
+        var min = a.getMinutes();
+        if (min<10) {min='0'+min};
+        if (a.setHours(0,0,0,0) == today.setHours(0,0,0,0))
+            return 'Today, ' + hour + ':' + min;
+        else if (a.setHours(0,0,0,0) == yesterday.setHours(0,0,0,0))
+            return 'Yesterday, ' + hour + ':' + min;
+        else if (year == today.getFullYear())
+            return date + ' ' + month + ', ' + hour + ':' + min;
+        else
+            return date + ' ' + month + ' ' + year + ', ' + hour + ':' + min;
+    }
+    function addStyleString(str) {
+        var node = document.createElement('style');
+        node.innerHTML = str;
+        document.body.appendChild(node);
+    }	
+  </script>
+    <style></style>
+  <style>
+    #header{all: unset;font-family: Arial;font-size: 15px;background: #003399;color: #fff;position: fixed;width: calc( 100% - 15px );height: 22px;padding: 5px;left: 0px;top: 0px;margin-bottom: 40px;border-bottom: 1px solid black;padding-left: 10px;padding-top: 6px;overflow: hidden;z-index: 300;}
+    #hSub { all: unset; font-family: Arial;font-size: 15px;background: #6699cc;font-size: small;margin: 0px;padding: 5px; padding-top: 5px; padding-left: 5px;padding-left: 10px;padding-top: 4px;position: fixed;left: 0;top: 34px;width: calc(100% - 15px );color: #000;height: 15px;z-index: 300;}
+    @media only screen and (max-width:768px){#header{height:51px}#hSub{top:63px}#hUp{float:left;left:0;font-size:small;position:fixed;top:35px}.sep{display:none}.topLeft{margin-top:30px}}
+  </style>
+  <div id="header">
+  <a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;">cruzspace.com</span></b></a>
+  <span id="hUp" style="float:right;margin-right: 5px;margin-top: 3px;font-size: small;"><a href="signup.php">SignUp</a><a href="login.php">Login</a></span>	</div>
+  <div id="hSub">
+    <a href="/?id=1">Home</a>  | <a href="/list.php">All <span class="sep">Friends</span></a> | <a href="/random.php">Rand<span class="sep">om</span></a> | <a href="/online.php">Online</a> | <a href="/music.php">Music</a>   <span class="sep">| <a href="/blog.php">Blog</a> </span> | <a href="/search.php">Search</a>
+  </div>	<div class="topLeft" style="animation-name: none;">
+    <div><h2 class="uName" id="name">Cruz</h2></div>
+    <table class="short">
+      <tbody><tr>	
+        <td>
+          <img src="https://i.postimg.cc/wvT7k0Pr/f59c41b8789d0c83d372a0785abc3a0e-500x500x1.jpg" class="avatar" id="avatar">	
 
-</html>
+        </td>
+        <td class="shortRight">
+          <div>"<span id="credo">Hi</span>"</div><br>
+          <div id="gender">Male</div>
+          <div><span id="age">16</span> years old</div>
+          <div id="country">United States</div>
+          <div id="online" style="display:none;margin-top:10px;"><img src="/img/online.gif"></div>
+          <div style="font-size:small;margin-top:10px;">Last Login:<br><span id="lastLogin">22/05/2008</span></div>
+        </td>
+      </tr>
+    </tbody></table>
+    <div class="boxInfo box">
+      <div class="boxHead"><b>Contacting <span class="uName">Cruz</span></b></div>
+      <a href="send.php?id=6598"><div class="boxButton" id="sMsg">Send Message</div></a>
+      <a href="report.php?id=6598"><div class="boxButton" id="report">Report</div></a>
+      <a href="invitation.php?id=6598"><div class="boxButton" id="add">Add to friends</div></a>
+      <a href="blokc.php?id=6598"><div class="boxButton" id="block">Block</div></a>
+    </div>
+    <div class="url box">
+      <div><b>MySpace URL:</b></div>
+      <div><a style="color:#000;text-decoration:none;" href="https://myspace.windows93.net/?id=6598">https://myspace.com/cruzwantsanaplus</a></div>
+    </div>
+    <div class="player box"><div class="songName"><b>Song:</b> <span class="songTitle">Hi-C - Wut U Wanna Do
+</span><a href="https://audio.com/embed/audio/1820827387576420?theme=image" download="Fwiends – I'll Be There For You.mp3"><img style="height: 15px; float: right; padding-right: 2px;" src="https://myspace.windows93.net/img/download.svg"></a></div><audio controls="" autoplay="" src="hic.mp3" controlslist="nodownload"></audio></div>	
+  </div>
+  <div class="topRight" style="animation-name: none;">
+    <div class="extended box"><h3><span class="uName">Cruz</span> is in your extended network</h3></div>
+        <div class="box blurbs">
+    <div class="blogs"><div>
+          <div>Personal Goals [<a href="goal1.html">view more</a>]</div>
+          <div>Educational Goals [<a href="goal2.html">view more</a>]</div>
+          <div>Career Goals [<a href="goal3.html">view more</a>]</div><div class="rightHead"><b><span class="uName">Cruz</span>'s blurbs</b></div>
+      <h4>About me:</h4>
+      <div id="about"><p>hi i am cruz i have goals</p>
+<p><div><img loading="lazy" style="max-width:100%;" src="https://i.postimg.cc/gJ4FVPLC/image-2025-01-09-201824326.png"></div></p></div>
+      <h4>Who I'd like to meet:</h4>
+      <div id="who">
+        <p>Yung High Cee Touchdown</p>			</div>	
+    </div>
+    <div class="box fwiends">
+      <div class="rightHead"><b><span class="uName">Cruz</span>'s Friends Space</b></div>
+      <div class="fwiendCounter"><b><span class="uName">Cruz</span> has <span class="fwiendCount">113</span> friends.</b></div>	
+      <div id="top">
+      <a href="https://myspace.windows93.net/?id=1"><div class="fwiendFace"><b>Kio</b><img src="https://i.postimg.cc/vHqF1XLB/image-2025-01-09-193946032.png"></div></a>			</div>
+      <div id="viewFriends"><b>View <a href="all.php?id=6598">All</a> <span class="uName">Cruz</span>'s Friends</b></div>
+    </div>
+    <div class="box comments">		
+      <div style="margin-bottom:20px;">Please <a href="login.php">login</a> to leave a comment. </div><div class="boxHead"><b>Comments</b></div>	
+      <table id="userWall">
+        <tbody><tr><td class="tableLeft"><a src="https://i.postimg.cc/vHqF1XLB/image-2025-01-09-193946032.png"></a></td><td class="tableRight"><div><b class="date">3 May 2020, 05:13</b></div><div><p>Thanks 4 the add!</p></div></td></tr>			</tbody></table>
+      <div style="font-size:small;text-align:right;">(22/100)</div>		</div>
+  </div>
+  <div id="imgPreview"><img src=""></div>
+  <div id="footer" class="box">
+<div>
+  <p>
+    <a href="about.php">About</a> <a href="help.php">Help</a> 
+    <a href="login.php">Login</a>		<br>© 1993-2025 <a style="text-decoration:none;" href="http://windows93.net">cruzspace.com</a>
+  </p>
+</div>	
+</div>	<script>
+    $( ".date" ).each(function( index ) {
+      var time =  timeConverter($( this ).text())
+      $( this ).text(time)
+    });
+    var time = Date.now()-parseInt($('#lastLogin').text())
+    if(time<900000||6598==1){
+      $('#online').show()
+    }
+    var time = new Date( parseInt($('#lastLogin').text()) )
+    var d = time.getDate();if (d<10) {d="0"+d};		
+    var m = time.getMonth()+1;if (m<10) {m="0"+m};
+    var y = time.getFullYear();
+    $('#lastLogin').text(	d+'/'+m+'/'+y	);
+  </script>
+  <script type="text/javascript" src="index.js"></script>
+  </div>
+
+<div id="css-picker-root"></div></body></html>

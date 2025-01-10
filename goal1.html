@@ -1,0 +1,142 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>MYSPACE</title>
+  <meta name="description" content="A PLACE FOR FWIENDS">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:og:title" content="MYSPACE">
+  <meta property="og:determiner" content="MY">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A PLACE FOR FWIENDS">
+  <meta property="og:image" content="https://myspace.windows93.net/u/1/avatar.jpg">
+  <meta property="og:url" content="https://myspace.windows93.net/?id=1">
+  <meta property="og:site_name" content="MYSPACE.WINDOWS93.NET">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="jquery.js"></script>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body class="blogBody">
+  <div id="container" style="animation-name: none;">
+  <script>
+    function timeConverter(t) {     
+        //var a = new Date(t * 1000);
+        var a = new Date(parseInt(t));
+        var today = new Date();
+        var yesterday = new Date(Date.now() - 86400000);
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var year = a.getFullYear();
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var hour = a.getHours();
+        if (hour<10) {hour='0'+hour};
+        var min = a.getMinutes();
+        if (min<10) {min='0'+min};
+        if (a.setHours(0,0,0,0) == today.setHours(0,0,0,0))
+            return 'Today, ' + hour + ':' + min;
+        else if (a.setHours(0,0,0,0) == yesterday.setHours(0,0,0,0))
+            return 'Yesterday, ' + hour + ':' + min;
+        else if (year == today.getFullYear())
+            return date + ' ' + month + ', ' + hour + ':' + min;
+        else
+            return date + ' ' + month + ' ' + year + ', ' + hour + ':' + min;
+    }
+    function addStyleString(str) {
+        var node = document.createElement('style');
+        node.innerHTML = str;
+        document.body.appendChild(node);
+    }	
+  </script>
+
+
+  <style></style>
+  <style>
+    #header{all: unset;font-family: Arial;font-size: 15px;background: #003399;color: #fff;position: fixed;width: calc( 100% - 15px );height: 22px;padding: 5px;left: 0px;top: 0px;margin-bottom: 40px;border-bottom: 1px solid black;padding-left: 10px;padding-top: 6px;overflow: hidden;z-index: 300;}
+    #hSub { all: unset; font-family: Arial;font-size: 15px;background: #6699cc;font-size: small;margin: 0px;padding: 5px; padding-top: 5px; padding-left: 5px;padding-left: 10px;padding-top: 4px;position: fixed;left: 0;top: 34px;width: calc(100% - 15px );color: #000;height: 15px;z-index: 300;}
+  </style>
+
+  <div id="header">
+  <a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;">cruzspace.com</span></b></a>
+  <span id="hUp" style="float:right;margin-right: 5px;margin-top: 3px;font-size: small;"><a href="signup.php">SignUp</a><a href="login.php">Login</a></span>	</div>
+  <div id="hSub">
+    <a href="/?id=1">Home</a>  | <a href="/list.php">All <span class="sep">Friends</span></a> | <a href="/random.php">Rand<span class="sep">om</span></a> | <a href="/online.php">Online</a> | <a href="/music.php">Music</a>   <span class="sep">| <a href="/blog.php">Blog</a> </span> | <a href="/search.php">Search</a>
+  </div>		<div class="blogTitle">
+
+        <h2 class="uName" id="name">
+        <a href="/blog.php?id=1" style="text-decoration:none;color:inherit;">Cruz's Blog</a>
+        </h2>
+
+      <div style="margin-top:20px;display:inline-block;width:100%;"><button onclick="window.location='/?id=1'" style="float:left;">⬅ Back to Profile</button> </div>
+    </div>
+
+  <div class="topLeft blogCard" style="animation-name: none;">
+
+
+          <img src="https://i.postimg.cc/wvT7k0Pr/f59c41b8789d0c83d372a0785abc3a0e-500x500x1.jpg" class="avatar" id="avatar">	
+
+
+          <div>"<span id="credo">put a girl on</span>"</div>
+          <div id="gender" style="font-size:small;">Male</div>
+          <div><span id="age" style="font-size:small;">16</span> years old</div>
+          <div id="country" style="font-size:small;">Baton Rouge<br>Louisiana<br>United States</div>
+          <div style="font-size:small;">Last Login: <span id="lastLogin">06/01/2008</span></div>
+          <div id="online" style="margin-top: 10px;"><img src="/img/online.gif"></div>
+
+
+    <div class="boxInfo box" style="margin-top:10px;">
+      <div class="boxHead"><b>Contacting <span class="uName">Cruz</span></b></div>
+      <a href="send.php?id=1"><div class="boxButton" id="sMsg">Message</div></a>
+      <a href="report.php?id=1"><div class="boxButton" id="report">Report</div></a>
+      <a href="invitation.php?id=1"><div class="boxButton" id="add">Add</div></a>
+      <a href="blokc.php?id=1"><div class="boxButton" id="block">Block</div></a>
+    </div>
+
+
+    <div>
+      <b>All Blogs (1/3)</b><ul><li><a href="blog.php?id=1&amp;b=1">Personal Goals</a></li></ul>		</div>
+
+
+  </div>
+
+  <div class="topRight blogPost" style="animation-name: none;">
+
+
+    <div class="blogs">
+
+    <div><div class="box blog"><div><b class="date">14 Feb 2008, 08:05</b></div><a href="/blog.php?id=1&amp;b=1" style="text-decoration:none;"><div class="blogCorpus"><h1>Personal Goals</h1></div></a><div class="blogCorpus"><p>I have many personal goals.<br>
+My personal goal that is the most important to me is to increase my kills when it comes to working with computer hardware as well as software before summer by practicing and creating projects. This website I created is just a little showcase of some of mt skills. I also hope I can save a lot of money before summer. This is so I can afford plenty of bus tickets to my girlfriend's house whenever I am not working. I can do this my setting up a plan to find how much of each paycheck to save, and ensure I will not touch it.</p>
+<p>I hope you enjoy my website, it took me forever.<br>
+Your friend,<br>
+– Cruz</p><a href="/blog.php?id=1&amp;b=1"><small>10 Comments</small><br></a></div></div><div class="box comments"></div></div></div>
+
+
+
+    </div>
+
+
+  </div>
+  <div id="imgPreview"><img src=""></div>
+  <div id="footer" class="box">
+<div>
+  <p>
+    <a href="about.php">About</a> <a href="help.php">Help</a> 
+    <a href="login.php">Login</a>		<br>© 1993-2025 <a style="text-decoration:none;" href="http://windows93.net">cruzspace.com</a>
+  </p>
+</div>	
+</div>	<script>
+    $( ".date" ).each(function( index ) {
+      var time =  timeConverter($( this ).text())
+      $( this ).text(time)
+    });
+    var time = Date.now()-parseInt($('#lastLogin').text())
+    if(time<900000||1==1){
+      $('#online').show()
+    }
+    var time = new Date( parseInt($('#lastLogin').text()) )
+    var d = time.getDate();if (d<10) {d="0"+d};		
+    var m = time.getMonth()+1;if (m<10) {m="0"+m};
+    var y = time.getFullYear();
+    $('#lastLogin').text(	d+'/'+m+'/'+y	);
+  </script>
+  <script type="text/javascript" src="index.js"></script>
+
+
+</body></html>
